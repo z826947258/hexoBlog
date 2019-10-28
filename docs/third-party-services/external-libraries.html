@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.2">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.2" color="#222">
+  <meta name="yandex-verification" content="3ac9ae36ddebb425">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.2">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.4.2',
+    exturl: true,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":true},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: true,
+    lazyload: true,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"preload":true},
+    path: 'search.json',
+    motion: {"enable":false},
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="NexT User Docs – Third-party Service Integration – External Libraries">
+<meta name="keywords" content="Hexo, NexT">
+<meta property="og:type" content="website">
+<meta property="og:title" content="External Libraries">
+<meta property="og:url" content="https:&#x2F;&#x2F;theme-next.org&#x2F;docs&#x2F;third-party-services&#x2F;external-libraries.html">
+<meta property="og:site_name" content="NexT">
+<meta property="og:description" content="NexT User Docs – Third-party Service Integration – External Libraries">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-23T07:52:59.158Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://theme-next.org/docs/third-party-services/external-libraries">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: false,
+    isPage: true,
+    isArchive: false
+  };
+</script>
+
+  <title>External Libraries | NexT
+  </title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">NexT</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <h1 class="site-subtitle" itemprop="description">Theme for Hexo</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-news">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-bullhorn"></i>News</a>
+
+  </li>
+        
+            
+  <li class="menu-item menu-item-docs">
+
+    <a href="/docs/" rel="section"><i class="fa fa-fw fa-book"></i>Docs</a>
+
+  </li>
+
+
+      
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">3</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0" title="Fork NexT on GitHub" aria-label="Fork NexT on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></span>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+  
+
+      
+
+        
+        <ul id="sub-menu" class="sub-menu menu">
+          
+            
+          
+          
+            
+                
+  <li class="menu-item menu-item-getting-started">
+
+    <a href="/docs/getting-started/" rel="section"><i class="fa fa-fw fa-flag"></i>Getting Started</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-theme-settings">
+
+    <a href="/docs/theme-settings/" rel="section"><i class="fa fa-fw fa-star"></i>Theme Settings</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-third-party-services">
+
+    <a href="/docs/third-party-services/" rel="section"><i class="fa fa-fw fa-plug"></i>Third Party Services</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-tag-plugins">
+
+    <a href="/docs/tag-plugins/" rel="section"><i class="fa fa-fw fa-rocket"></i>Tag Plugins</a>
+
+  </li>
+
+
+          
+              
+  <li class="menu-item menu-item-advanced-settings">
+
+    <a href="/docs/advanced-settings.html" rel="section"><i class="fa fa-fw fa-cogs"></i>Advanced Settings</a>
+
+  </li>
+
+
+          
+          
+              
+  <li class="menu-item menu-item-faq's">
+
+    <a href="/docs/faqs.html" rel="section"><i class="fa fa-fw fa-life-ring"></i>FAQ's</a>
+
+  </li>
+
+
+          
+          
+              
+  <li class="menu-item menu-item-troubleshooting">
+
+    <a href="/docs/troubleshooting.html" rel="section"><i class="fa fa-fw fa-bug"></i>Troubleshooting</a>
+
+  </li>
+
+
+          
+        </ul>
+        
+
+        
+
+                
+                
+
+                
+                
+
+                
+
+                    
+                    <ul id="sub-menu-2" class="sub-menu menu">
+                      
+                        
+  <li class="menu-item menu-item-comment-systems">
+
+    <a href="/docs/third-party-services/comments.html" rel="section"><i class="fa fa-fw fa-comments-o"></i>Comment Systems</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-statistics-and-analytics">
+
+    <a href="/docs/third-party-services/statistics-and-analytics.html" rel="section"><i class="fa fa-fw fa-bar-chart"></i>Statistics and Analytics</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-post-widgets">
+
+    <a href="/docs/third-party-services/post-widgets.html" rel="section"><i class="fa fa-fw fa-share-square"></i>Post Widgets</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-search-services">
+
+    <a href="/docs/third-party-services/search-services.html" rel="section"><i class="fa fa-fw fa-search-plus"></i>Search Services</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-external-libraries">
+
+    <a href="/docs/third-party-services/external-libraries.html" rel="section"><i class="fa fa-fw fa-puzzle-piece"></i>External Libraries</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-math-equations">
+
+    <a href="/docs/third-party-services/math-equations.html" rel="section"><i class="fa fa-fw fa-superscript"></i>Math Equations</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-chat-services">
+
+    <a href="/docs/third-party-services/chat-services.html" rel="section"><i class="fa fa-fw fa-comment"></i>Chat Services</a>
+
+  </li>
+
+
+                    </ul>
+                    
+                
+
+                
+                
+        
+      
+  
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+    
+    
+    
+    <div class="post-block" lang="en">
+      <header class="post-header">
+
+<h2 class="post-title" itemprop="name headline">External Libraries<span class="exturl post-edit-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvdGhlbWUtbmV4dC5vcmcvZWRpdC9zb3VyY2Uvc291cmNlL2RvY3MvdGhpcmQtcGFydHktc2VydmljZXMvZXh0ZXJuYWwtbGlicmFyaWVzLm1k" title="Edit this post"><i class="fa fa-pencil"></i></span>
+</h2>
+
+<div class="post-meta">
+    <div class="post-description">NexT User Docs – Third-party Service Integration – External Libraries</div>
+  
+  <ul class="breadcrumb">
+          
+            <li><a href="/docs/">DOCS</a></li>
+            <li><a href="/docs/third-party-services/">THIRD-PARTY-SERVICES</a></li>
+            <li>EXTERNAL-LIBRARIES</li>
+          
+  </ul>
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <h3 id="PJAX"><a href="#PJAX" class="headerlink" title="PJAX"></a>PJAX</h3><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL01vT3gvcGpheA==" title="https://github.com/MoOx/pjax">Pjax<i class="fa fa-external-link"></i></span> is a standalone JavaScript module that uses AJAX (XmlHttpRequest) and <code>pushState()</code> to deliver a fast browsing experience.</p>
+<p>It allows you to completely transform the user experience of standard websites (server-side generated or static ones) to make users feel like they are browsing an app, especially for those with low bandwidth connections.</p>
+<div class="tabs" id="pjax"><ul class="nav-tabs"><li class="tab active"><a href="#pjax-1">Installation →</a></li><li class="tab"><a href="#pjax-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="pjax-1"><p>Change dir to NexT directory, and install module to <code>source/lib</code> directory.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-pjax <span class="built_in">source</span>/lib/pjax</span><br></pre></td></tr></table></figure>
+
+<div class="note info">
+            <p>If you want to use the CDN instead of clone this repo, then need to <strong>set vendors</strong> in <span class="label primary">theme config file</span>:</p><figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line"><span class="attr">  pjax:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure>
+          </div></div><div class="tab-pane" id="pjax-2"><p>After the plugin installed, you can enable it by setting value <code>pjax</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Easily enable fast Ajax navigation on your website.</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/theme-next-pjax</span></span><br><span class="line"><span class="comment"># For moreinformation: https://github.com/MoOx/pjax</span></span><br><span class="line"><span class="attr">pjax:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div></div></div>
+<h3 id="Fancybox"><a href="#Fancybox" class="headerlink" title="Fancybox"></a>Fancybox</h3><p>NexT supports the fancybox plugin, which is a jQuery lightbox script for displaying images, videos and more. Touch enabled, responsive and fully customizable.</p>
+<p>There is support for old version 2 and new version 3. Please, choose only any one variant, do not need to install both.</p>
+<div class="tabs" id="fancybox"><ul class="nav-tabs"><li class="tab active"><a href="#fancybox-1">Version 2.x</a></li><li class="tab"><a href="#fancybox-2">Version 3.x</a></li></ul><div class="tab-content"><div class="tab-pane active" id="fancybox-1"><div class="tabs" id="fancybox1"><ul class="nav-tabs"><li class="tab active"><a href="#fancybox1-1">Installation →</a></li><li class="tab"><a href="#fancybox1-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="fancybox1-1"><p>If you want to use a different version from CDN, please follow the instructions below.</p>
+<p>You need to <strong>set vendors</strong> in <span class="label primary">theme config file</span>:</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line"><span class="attr">  jquery:</span> <span class="string">//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js</span></span><br><span class="line"><span class="attr">  fancybox:</span> <span class="string">//cdn.jsdelivr.net/npm/fancybox@2/dist/js/jquery.fancybox.pack.js</span></span><br><span class="line"><span class="attr">  fancybox_css:</span> <span class="string">//cdn.jsdelivr.net/npm/fancybox@2/dist/css/jquery.fancybox.min.css</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="fancybox1-2"><p>After the plugin installed, you can enable it by setting value <code>fancybox</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">fancybox:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div></div></div></div><div class="tab-pane" id="fancybox-2"><div class="tabs" id="fancybox2"><ul class="nav-tabs"><li class="tab active"><a href="#fancybox2-1">Installation →</a></li><li class="tab"><a href="#fancybox2-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="fancybox2-1"><p>If you want to use a different version from CDN, please follow the instructions below.</p>
+<p>You need to <strong>set vendors</strong> in <span class="label primary">theme config file</span>:</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line"><span class="attr">  jquery:</span> <span class="string">//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js</span></span><br><span class="line"><span class="attr">  fancybox:</span> <span class="string">//cdn.jsdelivr.net/npm/fancybox@3/dist/js/jquery.fancybox.pack.js</span></span><br><span class="line"><span class="attr">  fancybox_css:</span> <span class="string">//cdn.jsdelivr.net/npm/fancybox@3/dist/css/jquery.fancybox.min.css</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="fancybox2-2"><p>After the plugin installed, you can enable it by setting value <code>fancybox</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">fancybox:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div></div></div></div></div></div>
+<h3 id="Medium-Zoom"><a href="#Medium-Zoom" class="headerlink" title="Medium Zoom"></a>Medium Zoom</h3><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ZyYW5jb2lzY2hhbGlmb3VyL21lZGl1bS16b29t" title="https://github.com/francoischalifour/medium-zoom">Medium Zoom<i class="fa fa-external-link"></i></span> is a JavaScript library for zooming images like Medium.</p>
+<div class="tabs" id="medium-zoom"><ul class="nav-tabs"><li class="tab active"><a href="#medium-zoom-1">Installation →</a></li><li class="tab"><a href="#medium-zoom-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="medium-zoom-1"><p>If you want to use a different version from CDN, please follow the instructions below.</p>
+<p>You need to <strong>set vendors</strong> in <span class="label primary">theme config file</span>:</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line"><span class="attr">  mediumzoom:</span> <span class="attr">https://cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="medium-zoom-2"><p>After the plugin installed, you can enable it by setting value <code>mediumzoom</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># A JavaScript library for zooming images like Medium.</span></span><br><span class="line"><span class="attr">mediumzoom:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<div class="note warning">
+            <p>Do not enable both <code>fancybox</code> and <code>mediumzoom</code>.</p>
+          </div></div></div></div>
+<h3 id="Lazyload"><a href="#Lazyload" class="headerlink" title="Lazyload"></a>Lazyload</h3><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0Fwb29ydlNheGVuYS9sb3phZC5qcw==" title="https://github.com/ApoorvSaxena/lozad.js">Lazyload<i class="fa fa-external-link"></i></span> is a modern vanilla JavaScript version of the original Lazy Load plugin. Lazy Load delays loading of images in long web pages. Images outside of viewport will not be loaded before user scrolls to them. This is opposite of image preloading.</p>
+<div class="tabs" id="lazyload"><ul class="nav-tabs"><li class="tab active"><a href="#lazyload-1">Installation →</a></li><li class="tab"><a href="#lazyload-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="lazyload-1"><p>If you want to use a different version from CDN, please follow the instructions below.</p>
+<p>You need to <strong>set vendors</strong> in <span class="label primary">theme config file</span>:</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line"><span class="attr">  lazyload:</span> <span class="string">//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="lazyload-2"><p>After the plugin installed, you can enable it by setting value <code>lazyload</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Vanilla JavaScript plugin for lazyloading images.</span></span><br><span class="line"><span class="attr">lazyload:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div></div></div>
+<h3 id="Pangu-Autospace"><a href="#Pangu-Autospace" class="headerlink" title="Pangu Autospace"></a>Pangu Autospace</h3><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3ZpbnRhL3Bhbmd1Lmpz" title="https://github.com/vinta/pangu.js">pangu.js<i class="fa fa-external-link"></i></span> will automatically insert a blank space between all the Chinese characters and the hexagonal English numeric symbols on the page.</p>
+<div class="tabs" id="pangu"><ul class="nav-tabs"><li class="tab active"><a href="#pangu-1">Installation →</a></li><li class="tab"><a href="#pangu-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="pangu-1"><p>If you want to use a different version from CDN, please follow the instructions below.</p>
+<p>You need to <strong>set vendors</strong> in <span class="label primary">theme config file</span>:</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="comment"># https://github.com/vinta/pangu.js</span></span><br><span class="line"><span class="attr">  pangu:</span> <span class="string">//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="pangu-2"><p>After the plugin installed, you can enable it by setting value <code>pangu</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Pangu Support</span></span><br><span class="line"><span class="attr">pangu:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div></div></div>
+<h3 id="Quicklink"><a href="#Quicklink" class="headerlink" title="Quicklink"></a>Quicklink</h3><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0dvb2dsZUNocm9tZUxhYnMvcXVpY2tsaW5r" title="https://github.com/GoogleChromeLabs/quicklink">Quicklink<i class="fa fa-external-link"></i></span> is a JavaScript plugin that faster subsequent page-loads by prefetching in-viewport links during idle time. Chrome, Firefox, Edge are supported without polyfills.</p>
+<div class="tabs" id="quicklink"><ul class="nav-tabs"><li class="tab active"><a href="#quicklink-1">Installation →</a></li><li class="tab"><a href="#quicklink-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="quicklink-1"><p>If you want to use a different version from CDN, please follow the instructions below.</p>
+<p>You need to <strong>set vendors</strong> in <span class="label primary">theme config file</span>:</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line"><span class="attr">  quicklink:</span> <span class="string">//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="quicklink-2"><p>After the plugin installed, you can enable it by setting value <code>quicklink.enable</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="string">...</span></span><br><span class="line"><span class="attr">quicklink:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  home:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  archive:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  delay:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  timeout:</span> <span class="number">3000</span></span><br><span class="line"><span class="attr">  priority:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  ignores:</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure></div></div></div>
+<h3 id="Animation-Effect"><a href="#Animation-Effect" class="headerlink" title="Animation Effect"></a>Animation Effect</h3><p>NexT enables animation effect by default which is supported by JavaScript, so it will wait for JavaScript loaded to show content.<br>If you need speed you can set this section to <code>false</code> to disable it.</p>
+<p>Edit <span class="label primary">theme config file</span> and set the needed values under the <code>motion</code> to fit your demand.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Use velocity to animate everything.</span></span><br><span class="line"><span class="attr">motion:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  async:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">  transition:</span></span><br><span class="line">    <span class="comment"># Transition variants:</span></span><br><span class="line">    <span class="comment"># fadeIn | fadeOut | flipXIn | flipXOut | flipYIn | flipYOut | flipBounceXIn | flipBounceXOut | flipBounceYIn | flipBounceYOut</span></span><br><span class="line">    <span class="comment"># swoopIn | swoopOut | whirlIn | whirlOut | shrinkIn | shrinkOut | expandIn | expandOut</span></span><br><span class="line">    <span class="comment"># bounceIn | bounceOut | bounceUpIn | bounceUpOut | bounceDownIn | bounceDownOut | bounceLeftIn | bounceLeftOut | bounceRightIn | bounceRightOut</span></span><br><span class="line">    <span class="comment"># slideUpIn | slideUpOut | slideDownIn | slideDownOut | slideLeftIn | slideLeftOut | slideRightIn | slideRightOut</span></span><br><span class="line">    <span class="comment"># slideUpBigIn | slideUpBigOut | slideDownBigIn | slideDownBigOut | slideLeftBigIn | slideLeftBigOut | slideRightBigIn | slideRightBigOut</span></span><br><span class="line">    <span class="comment"># perspectiveUpIn | perspectiveUpOut | perspectiveDownIn | perspectiveDownOut | perspectiveLeftIn | perspectiveLeftOut | perspectiveRightIn | perspectiveRightOut</span></span><br><span class="line"><span class="attr">    post_block:</span> <span class="string">fadeIn</span></span><br><span class="line"><span class="attr">    post_header:</span> <span class="string">slideDownIn</span></span><br><span class="line"><span class="attr">    post_body:</span> <span class="string">slideDownIn</span></span><br><span class="line"><span class="attr">    coll_header:</span> <span class="string">slideLeftIn</span></span><br><span class="line">    <span class="comment"># Only for Pisces | Gemini.</span></span><br><span class="line"><span class="attr">    sidebar:</span> <span class="string">slideUpIn</span></span><br></pre></td></tr></table></figure>
+<h3 id="Progress-Bar"><a href="#Progress-Bar" class="headerlink" title="Progress Bar"></a>Progress Bar</h3><p>Pace will automatically monitor your Ajax requests, event loop lag, document ready state and elements on your page to decide on the progress.</p>
+<div class="tabs" id="pace"><ul class="nav-tabs"><li class="tab active"><a href="#pace-1">Installation →</a></li><li class="tab"><a href="#pace-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="pace-1"><p>Change dir to NexT directory, and install module to <code>source/lib</code> directory.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-pace <span class="built_in">source</span>/lib/pace</span><br></pre></td></tr></table></figure>
+
+<div class="note info">
+            <p>If you want to use the CDN instead of clone this repo, then need to <strong>set vendors</strong> in <span class="label primary">theme config file</span>:</p><figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line"><span class="attr">  pace:</span> <span class="string">//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js</span></span><br><span class="line"><span class="attr">  pace_css:</span> <span class="string">//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure>
+          </div></div><div class="tab-pane" id="pace-2"><div class="tabs" id="pace1"><ul class="nav-tabs"><li class="tab active"><a href="#pace1-1"><code>pace</code></a></li><li class="tab"><a href="#pace1-2"><code>theme</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="pace1-1"><p>After the plugin installed, you can enable it by setting value <code>pace.enable</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">pace:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="pace1-2"><p>Pace includes a bunch of <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5odWJzcG90LmNvbS9wYWNlL2RvY3Mvd2VsY29tZS8=" title="http://github.hubspot.com/pace/docs/welcome/">themes<i class="fa fa-external-link"></i></span> to get you started. Just include the appropriate css file.</p>
+<ul>
+<li>pace-theme-big-counter</li>
+<li>pace-theme-bounce</li>
+<li>pace-theme-barber-shop</li>
+<li>pace-theme-center-atom</li>
+<li>pace-theme-center-circle</li>
+<li>pace-theme-center-radar</li>
+<li>pace-theme-center-simple</li>
+<li>pace-theme-corner-indicator</li>
+<li>pace-theme-fill-left</li>
+<li>pace-theme-flash</li>
+<li>pace-theme-flat-top</li>
+<li>pace-theme-loading-bar</li>
+<li>pace-theme-mac-osx</li>
+<li>pace-theme-material</li>
+<li>pace-theme-minimal</li>
+</ul>
+<p>By default NexT uses <code>minimal</code> theme (pace-theme-minimal). You can configure it by editing values in <code>pace.theme</code> section in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">pace:</span></span><br><span class="line"><span class="attr">  theme:</span> <span class="string">minimal</span></span><br></pre></td></tr></table></figure>
+
+<div class="note info">
+            <p>If you want to use the CDN, then need to <strong>set vendors</strong> in <span class="label primary">theme config file</span>:</p><figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line"><span class="attr">  pace_css:</span> <span class="string">//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure>
+          </div></div></div></div></div></div></div>
+<h3 id="Backgroud-JS"><a href="#Backgroud-JS" class="headerlink" title="Backgroud JS"></a>Backgroud JS</h3><h4 id="JavaScript-3D-library"><a href="#JavaScript-3D-library" class="headerlink" title="JavaScript 3D library"></a>JavaScript 3D library</h4><p>The aim of <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21yZG9vYi90aHJlZS5qcw==" title="https://github.com/mrdoob/three.js">JavaScript 3D library<i class="fa fa-external-link"></i></span> is to create an easy to use, lightweight, 3D library. The library provides <code>&lt;canvas&gt;</code>, <code>&lt;svg&gt;</code>, <code>CSS3D</code> and <code>WebGL</code> renderers.</p>
+<div class="tabs" id="javascript-3d"><ul class="nav-tabs"><li class="tab active"><a href="#javascript-3d-1">Installation →</a></li><li class="tab"><a href="#javascript-3d-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="javascript-3d-1"><p>Change dir to NexT directory, and install module to <code>source/lib</code> directory.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-three <span class="built_in">source</span>/lib/three</span><br></pre></td></tr></table></figure>
+
+<div class="note info">
+            <p>If you want to use the CDN instead of clone this repo, then need to <strong>set vendors</strong> in <span class="label primary">theme config file</span>:</p><figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="comment"># three</span></span><br><span class="line"><span class="attr">  three:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># three_waves</span></span><br><span class="line"><span class="attr">  three_waves:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three-waves.min.js</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># canvas_lines</span></span><br><span class="line"><span class="attr">  canvas_lines:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># canvas_sphere</span></span><br><span class="line"><span class="attr">  canvas_sphere:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js</span></span><br><span class="line"></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure>
+          </div></div><div class="tab-pane" id="javascript-3d-2"><p>After the plugin installed, you can enable it by setting value <code>three.enable</code> and <code>three.three_waves</code> or <code>three.canvas_lines</code> or <code>three.canvas_sphere</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># JavaScript 3D library.</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/theme-next-three</span></span><br><span class="line"><span class="attr">three:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  three_waves:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">  canvas_lines:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">  canvas_sphere:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure></div></div></div>
+<h4 id="Canvas-Nest"><a href="#Canvas-Nest" class="headerlink" title="Canvas Nest"></a>Canvas Nest</h4><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2h1c3RjYy9jYW52YXMtbmVzdC5qcw==" title="https://github.com/hustcc/canvas-nest.js">canvas-nest.js<i class="fa fa-external-link"></i></span> is a nest backgroud of website draw on canvas.</p>
+<div class="tabs" id="canvas_nest"><ul class="nav-tabs"><li class="tab active"><a href="#canvas_nest-1">Installation →</a></li><li class="tab"><a href="#canvas_nest-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="canvas_nest-1"><p>Change dir to NexT directory, and install module to <code>source/lib</code> directory.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-canvas-nest <span class="built_in">source</span>/lib/canvas-nest</span><br></pre></td></tr></table></figure>
+
+<div class="note info">
+            <p>If you want to use the CDN instead of clone this repo, then need to <strong>set vendors</strong> in <span class="label primary">theme config file</span>:</p><figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="comment"># https://github.com/hustcc/canvas-nest.js</span></span><br><span class="line"><span class="attr">  canvas_nest:</span> <span class="string">//cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.min.js</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure>
+          </div></div><div class="tab-pane" id="canvas_nest-2"><p>After the plugin installed, you can enable it by setting value <code>canvas_nest</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Canvas-nest</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/theme-next-canvas-nest</span></span><br><span class="line"><span class="attr">canvas_nest:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div></div></div>
+<h4 id="Canvas-Ribbon"><a href="#Canvas-Ribbon" class="headerlink" title="Canvas Ribbon"></a>Canvas Ribbon</h4><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3pwcm9vL2NhbnZhcy1yaWJib24=" title="https://github.com/zproo/canvas-ribbon">canvas-ribbon.js<i class="fa fa-external-link"></i></span> is a ribbon backgroud of website draw on canvas.</p>
+<div class="tabs" id="canvas_ribbon"><ul class="nav-tabs"><li class="tab active"><a href="#canvas_ribbon-1">Installation →</a></li><li class="tab"><a href="#canvas_ribbon-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="canvas_ribbon-1"><p>Change dir to NexT directory, and install module to <code>source/lib</code> directory.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-canvas-ribbon <span class="built_in">source</span>/lib/canvas-ribbon</span><br></pre></td></tr></table></figure>
+
+<div class="note info">
+            <p>If you want to use the CDN instead of clone this repo, then need to <strong>set vendors</strong> in <span class="label primary">theme config file</span>:</p><figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="comment"># https://github.com/zproo/canvas-ribbon</span></span><br><span class="line"><span class="attr">  canvas_ribbon:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure>
+          </div></div><div class="tab-pane" id="canvas_ribbon-2"><p>After the plugin installed, you can enable it by setting value <code>canvas_ribbon</code> to <code>true</code> in <span class="label primary">theme config file</span>. You can also configure the ribbon setting by editing values in <code>canvas_ribbon</code> section:</p>
+<ul>
+<li>size: The width of the ribbon.</li>
+<li>alpha: The transparency of the ribbon.</li>
+<li>zIndex: The display level of the ribbon.</li>
+</ul>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">canvas_ribbon:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  size:</span> <span class="number">300</span></span><br><span class="line"><span class="attr">  alpha:</span> <span class="number">0.6</span></span><br><span class="line"><span class="attr">  zIndex:</span> <span class="bullet">-1</span></span><br></pre></td></tr></table></figure></div></div></div>
+
+      </div>
+      
+      
+      
+    </div>
+    
+  <ul class="breadcrumb">
+          
+            <li><a href="/docs/">DOCS</a></li>
+            <li><a href="/docs/third-party-services/">THIRD-PARTY-SERVICES</a></li>
+            <li>EXTERNAL-LIBRARIES</li>
+          
+  </ul>
+
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments" id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#PJAX"><span class="nav-number">1.</span> <span class="nav-text">PJAX</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Fancybox"><span class="nav-number">2.</span> <span class="nav-text">Fancybox</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Medium-Zoom"><span class="nav-number">3.</span> <span class="nav-text">Medium Zoom</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lazyload"><span class="nav-number">4.</span> <span class="nav-text">Lazyload</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pangu-Autospace"><span class="nav-number">5.</span> <span class="nav-text">Pangu Autospace</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Quicklink"><span class="nav-number">6.</span> <span class="nav-text">Quicklink</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Animation-Effect"><span class="nav-number">7.</span> <span class="nav-text">Animation Effect</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Progress-Bar"><span class="nav-number">8.</span> <span class="nav-text">Progress Bar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Backgroud-JS"><span class="nav-number">9.</span> <span class="nav-text">Backgroud JS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#JavaScript-3D-library"><span class="nav-number">9.1.</span> <span class="nav-text">JavaScript 3D library</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Canvas-Nest"><span class="nav-number">9.2.</span> <span class="nav-text">Canvas Nest</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Canvas-Ribbon"><span class="nav-number">9.3.</span> <span class="nav-text">Canvas Ribbon</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="Theme NexT"
+    src="/images/apple-touch-icon-next.png">
+  <p class="site-author-name" itemprop="name">Theme NexT</p>
+  <div class="site-description" itemprop="description">Stay Simple. Stay NexT.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQ=" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;theme-next"><i class="fa fa-fw fa-github"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:support@theme-next.org" title="E-Mail &amp;rarr; mailto:support@theme-next.org"><i class="fa fa-fw fa-envelope"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXR0ZXIuaW0vdGhlbWUtbmV4dA==" title="Gitter &amp;rarr; https:&#x2F;&#x2F;gitter.im&#x2F;theme-next"><i class="fa fa-fw fa-github-alt"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9yaW90LmltL2FwcC8jL3Jvb20vI05leFQ6bWF0cml4Lm9yZw==" title="Riot &amp;rarr; https:&#x2F;&#x2F;riot.im&#x2F;app&#x2F;#&#x2F;room&#x2F;#NexT:matrix.org"><i class="fa fa-fw fa-bullhorn"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90Lm1lL2pvaW5jaGF0L0dVTkhYQS12WmtnU011aW1MMVZtTXc=" title="Telegram [Chat] &amp;rarr; https:&#x2F;&#x2F;t.me&#x2F;joinchat&#x2F;GUNHXA-vZkgSMuimL1VmMw"><i class="fa fa-fw fa-telegram"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90Lm1lL3RoZW1lX25leHQ=" title="Telegram [News] &amp;rarr; https:&#x2F;&#x2F;t.me&#x2F;theme_next"><i class="fa fa-fw fa-paper-plane"></i></span>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC91bmRlZmluZWQ="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+  </div>
+
+
+<div class="cc-license motion-element" itemprop="sponsor">
+  <span class="exturl cc-opacity" title="Deploy with Netlify → https://www.netlify.com" data-url="aHR0cHM6Ly93d3cubmV0bGlmeS5jb20="><img width="80" src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Netlify"></span>
+</div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2014 – 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">NexT</span>
+</div>
+  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://theme-next.org/" class="theme-link">NexT.Gemini</a> v7.4.2
+  </div><div class="footer-custom">
+Theme source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0">here</span><br>
+Website source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvdGhlbWUtbmV4dC5vcmc=">here</span>
+</div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+<script src="/js/utils.js?v=7.4.2"></script>
+<script src="/js/schemes/pisces.js?v=7.4.2"></script>
+<script src="/js/next-boot.js?v=7.4.2"></script>
+
+
+
+  
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.4.2"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://theme-next.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  function loadComments() {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: {language: 'en',
+          page: {
+            url: "https://theme-next.org/docs/third-party-services/external-libraries.html",
+            identifier: "docs/third-party-services/external-libraries.html",
+            title: "External Libraries"
+          }
+        }
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://theme-next.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  }
+    (function() {
+      var offsetTop = document.getElementById('comments').offsetTop - window.innerHeight;
+      if (offsetTop <= 0) {
+        // load directly when there's no a scrollbar
+        window.addEventListener('load', loadComments, false);
+      } else {
+        var disqus_scroll = () => {
+          // offsetTop may changes because of manually resizing browser window or lazy loading images.
+          var offsetTop = document.getElementById('comments').offsetTop - window.innerHeight;
+          var scrollTop = window.scrollY;
+
+          // pre-load comments a bit? (margin or anything else)
+          if (offsetTop - scrollTop < 60) {
+            window.removeEventListener('scroll', disqus_scroll);
+            loadComments();
+          }
+        };
+        window.addEventListener('scroll', disqus_scroll);
+      }
+    })();
+  
+</script>
+
+</body>
+</html>

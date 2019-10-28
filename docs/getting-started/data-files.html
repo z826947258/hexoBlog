@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.2">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.2" color="#222">
+  <meta name="yandex-verification" content="3ac9ae36ddebb425">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.2">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.4.2',
+    exturl: true,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":true},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: true,
+    lazyload: true,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"preload":true},
+    path: 'search.json',
+    motion: {"enable":false},
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="NexT User Docs – Starting to Use – Data Files">
+<meta name="keywords" content="Hexo, NexT">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Data Files">
+<meta property="og:url" content="https:&#x2F;&#x2F;theme-next.org&#x2F;docs&#x2F;getting-started&#x2F;data-files.html">
+<meta property="og:site_name" content="NexT">
+<meta property="og:description" content="NexT User Docs – Starting to Use – Data Files">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-23T07:52:59.153Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://theme-next.org/docs/getting-started/data-files">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: false,
+    isPage: true,
+    isArchive: false
+  };
+</script>
+
+  <title>Data Files | NexT
+  </title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">NexT</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <h1 class="site-subtitle" itemprop="description">Theme for Hexo</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-news">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-bullhorn"></i>News</a>
+
+  </li>
+        
+            
+  <li class="menu-item menu-item-docs">
+
+    <a href="/docs/" rel="section"><i class="fa fa-fw fa-book"></i>Docs</a>
+
+  </li>
+
+
+      
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">3</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0" title="Fork NexT on GitHub" aria-label="Fork NexT on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></span>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+  
+
+      
+
+        
+        <ul id="sub-menu" class="sub-menu menu">
+          
+            
+          
+          
+            
+                
+  <li class="menu-item menu-item-getting-started">
+
+    <a href="/docs/getting-started/" rel="section"><i class="fa fa-fw fa-flag"></i>Getting Started</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-theme-settings">
+
+    <a href="/docs/theme-settings/" rel="section"><i class="fa fa-fw fa-star"></i>Theme Settings</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-third-party-services">
+
+    <a href="/docs/third-party-services/" rel="section"><i class="fa fa-fw fa-plug"></i>Third Party Services</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-tag-plugins">
+
+    <a href="/docs/tag-plugins/" rel="section"><i class="fa fa-fw fa-rocket"></i>Tag Plugins</a>
+
+  </li>
+
+
+          
+              
+  <li class="menu-item menu-item-advanced-settings">
+
+    <a href="/docs/advanced-settings.html" rel="section"><i class="fa fa-fw fa-cogs"></i>Advanced Settings</a>
+
+  </li>
+
+
+          
+          
+              
+  <li class="menu-item menu-item-faq's">
+
+    <a href="/docs/faqs.html" rel="section"><i class="fa fa-fw fa-life-ring"></i>FAQ's</a>
+
+  </li>
+
+
+          
+          
+              
+  <li class="menu-item menu-item-troubleshooting">
+
+    <a href="/docs/troubleshooting.html" rel="section"><i class="fa fa-fw fa-bug"></i>Troubleshooting</a>
+
+  </li>
+
+
+          
+        </ul>
+        
+
+        
+
+                
+
+                    
+                    <ul id="sub-menu-2" class="sub-menu menu">
+                      
+                        
+  <li class="menu-item menu-item-installation">
+
+    <a href="/docs/getting-started/installation.html" rel="section"><i class="fa fa-fw fa-download"></i>Installation</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-deployment">
+
+    <a href="/docs/getting-started/deployment.html" rel="section"><i class="fa fa-fw fa-upload"></i>Deployment</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-data-files">
+
+    <a href="/docs/getting-started/data-files.html" rel="section"><i class="fa fa-fw fa-wrench"></i>Data Files</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-update-from-5.x">
+
+    <a href="/docs/getting-started/update-from-v5.html" rel="section"><i class="fa fa-fw fa-retweet"></i>Update from 5.x</a>
+
+  </li>
+
+
+                    </ul>
+                    
+                
+
+                
+                
+
+                
+                
+
+                
+                
+        
+      
+  
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+    
+    
+    
+    <div class="post-block" lang="en">
+      <header class="post-header">
+
+<h2 class="post-title" itemprop="name headline">Data Files<span class="exturl post-edit-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvdGhlbWUtbmV4dC5vcmcvZWRpdC9zb3VyY2Uvc291cmNlL2RvY3MvZ2V0dGluZy1zdGFydGVkL2RhdGEtZmlsZXMubWQ=" title="Edit this post"><i class="fa fa-pencil"></i></span>
+</h2>
+
+<div class="post-meta">
+    <div class="post-description">NexT User Docs – Starting to Use – Data Files</div>
+  
+  <ul class="breadcrumb">
+          
+            <li><a href="/docs/">DOCS</a></li>
+            <li><a href="/docs/getting-started/">GETTING-STARTED</a></li>
+            <li>DATA-FILES</li>
+          
+  </ul>
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <p>Currently, it is not smooth to update NexT theme from pulling or downloading new releases. It is quite often running into conflict status when updating NexT theme via <code>git pull</code>, or need to merge configurations manually when upgrading to new releases.</p>
+<p> At present, NexT encourages users to store some options in <span class="label info">site config file</span> (<code>hexo/_config.yml</code>) and other options in <span class="label primary">theme config file</span> (<code>next/_config.yml</code>). This approach is applicable, but has some drawbacks:</p>
+<ol>
+<li>Configurations are splitted into two pieces</li>
+<li>Users may be confused which place should be for options</li>
+</ol>
+<p>In order to resolve this issue, NexT will take advantage of <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZGF0YS1maWxlcw==" title="https://hexo.io/docs/data-files">Hexo Data files<i class="fa fa-external-link"></i></span>. Because Data files is introduced in Hexo 3, so you need upgrade Hexo to 3.0 (or above) to use this feature.</p>
+<p>If you prefer Hexo 2.x, you can still use the old approach for configurations. NexT is still compatible with Hexo 2.x (but errors are possible).</p>
+<div class="tabs" id="option"><ul class="nav-tabs"><li class="tab active"><a href="#option-1"><span class="label success">Hexo-Way</span></a></li><li class="tab"><a href="#option-2">NexT-Way</a></li></ul><div class="tab-content"><div class="tab-pane active" id="option-1"><p>With this way, all your configurations locate in main <span class="label info">site config file</span>.<br>You don&#39;t need to edit <span class="label primary">theme config file</span> or create any new files.<br>But you need to <strong><a href="/docs/troubleshooting/#Keep-up-indentation">keep up indentation</a></strong> within <code>theme_config</code> option.</p>
+<div class="note info">
+            <p>If there are any new options in new releases, you just need to copy those options from <span class="label primary">theme config file</span>, paste into <span class="label info">site config file</span> and set their values to whatever you want.</p>
+          </div>
+
+<p><strong>Usage</strong></p>
+<ol>
+<li>Check for no exists <code>hexo/source/_data/next.yml</code> file (delete it if exists).</li>
+<li>Copy needed NexT theme options from <span class="label primary">theme config file</span> into <span class="label info">site config file</span>, then<br>2.1. Move all this settings to the right with two spaces (in Visual Studio Code: select all strings, <kbd>CTRL</kbd> + <kbd>]</kbd>).<br>2.2. Add <code>theme_config:</code> parameter above all this settings.</li>
+</ol>
+<p><strong>Useful links</strong></p>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvY29uZmlndXJhdGlvbiNPdmVycmlkaW5nLVRoZW1lLUNvbmZpZw==" title="https://hexo.io/docs/configuration#Overriding-Theme-Config">Hexo Configuration<i class="fa fa-external-link"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL3B1bGwvNzU3" title="https://github.com/hexojs/hexo/pull/757">Hexo Pull #757<i class="fa fa-external-link"></i></span></li>
+</ul></div><div class="tab-pane" id="option-2"><p>With this way, you can put all your configurations into one place (<code>hexo/source/_data/next.yml</code>).<br>You don&#39;t need to edit <span class="label primary">theme config file</span> (<code>next/_config.yml</code>).<br>But option may not accurately procces all hexo external libraries with their additional options (for example, <code>hexo-server</code> module options may be readed only in default hexo config).</p>
+<div class="note info">
+            <p>If there are any new options in new releases, you just need to copy those options from <span class="label primary">theme config file</span>, paste into <code>hexo/source/_data/next.yml</code> and set their values to whatever you want.</p>
+          </div>
+
+<p><strong>Usage</strong></p>
+<ol>
+<li>Please ensure you are using Hexo 3 (or above).</li>
+<li><p>Create an file named <code>next.yml</code> in <code>hexo/source/_data</code> directory (create <code>_data</code> directory if it did not exists).</p>
+<div class="note warning">
+         <p>After that steps there are <strong>2 variants</strong>, need to <strong>choose only one</strong> of them and <strong>resume next steps</strong>.</p>
+       </div>
+
+<div class="tabs" id="variant"><ul class="nav-tabs"><li class="tab active"><a href="#variant-1"><strong><code>override: false</code></strong></a></li><li class="tab"><a href="#variant-2"><code>override: true</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="variant-1"><p>1. In <code>next.yml</code> <code>override</code> option must not be defined or set on <code>false</code>.<br>2. Copy <strong>needed options</strong> from both <span class="label info">site config file</span> and <span class="label primary">theme config file</span> into <code>hexo/source/_data/next.yml</code>.</p></div><div class="tab-pane" id="variant-2"><p>1. In <code>next.yml</code> set <code>override</code> option on <code>true</code>.<br>2. Copy <strong>all NexT theme options</strong> from <span class="label primary">theme config file</span> into <code>hexo/source/_data/next.yml</code>.</p></div></div></div></li>
+<li>Then, in main <span class="label info">site config file</span> need to define <code>theme: next</code> option (and if needed, <code>source_dir: source</code>).</li>
+<li>Use standart parameters to start server, generate or deploy (<code>hexo clean &amp;&amp; hexo g -d &amp;&amp; hexo s</code>).</li>
+</ol>
+<div class="note danger">
+            <p><strong>Known Issues</strong><br>NexT uses <code>lodash/merge</code> to merge configs from <code>next.yml</code>, which might lead to the incorrect order of menu item. Since <code>lodash/merge</code> is using deep copy, even if you set the order of the menu items, they will follow the default order in <code>_config.yml</code>.</p>
+          </div></div></div></div>
+
+      </div>
+      
+      
+      
+    </div>
+    
+  <ul class="breadcrumb">
+          
+            <li><a href="/docs/">DOCS</a></li>
+            <li><a href="/docs/getting-started/">GETTING-STARTED</a></li>
+            <li>DATA-FILES</li>
+          
+  </ul>
+
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments" id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="Theme NexT"
+    src="/images/apple-touch-icon-next.png">
+  <p class="site-author-name" itemprop="name">Theme NexT</p>
+  <div class="site-description" itemprop="description">Stay Simple. Stay NexT.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQ=" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;theme-next"><i class="fa fa-fw fa-github"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:support@theme-next.org" title="E-Mail &amp;rarr; mailto:support@theme-next.org"><i class="fa fa-fw fa-envelope"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXR0ZXIuaW0vdGhlbWUtbmV4dA==" title="Gitter &amp;rarr; https:&#x2F;&#x2F;gitter.im&#x2F;theme-next"><i class="fa fa-fw fa-github-alt"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9yaW90LmltL2FwcC8jL3Jvb20vI05leFQ6bWF0cml4Lm9yZw==" title="Riot &amp;rarr; https:&#x2F;&#x2F;riot.im&#x2F;app&#x2F;#&#x2F;room&#x2F;#NexT:matrix.org"><i class="fa fa-fw fa-bullhorn"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90Lm1lL2pvaW5jaGF0L0dVTkhYQS12WmtnU011aW1MMVZtTXc=" title="Telegram [Chat] &amp;rarr; https:&#x2F;&#x2F;t.me&#x2F;joinchat&#x2F;GUNHXA-vZkgSMuimL1VmMw"><i class="fa fa-fw fa-telegram"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90Lm1lL3RoZW1lX25leHQ=" title="Telegram [News] &amp;rarr; https:&#x2F;&#x2F;t.me&#x2F;theme_next"><i class="fa fa-fw fa-paper-plane"></i></span>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC91bmRlZmluZWQ="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+  </div>
+
+
+<div class="cc-license motion-element" itemprop="sponsor">
+  <span class="exturl cc-opacity" title="Deploy with Netlify → https://www.netlify.com" data-url="aHR0cHM6Ly93d3cubmV0bGlmeS5jb20="><img width="80" src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Netlify"></span>
+</div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2014 – 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">NexT</span>
+</div>
+  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://theme-next.org/" class="theme-link">NexT.Gemini</a> v7.4.2
+  </div><div class="footer-custom">
+Theme source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0">here</span><br>
+Website source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvdGhlbWUtbmV4dC5vcmc=">here</span>
+</div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+<script src="/js/utils.js?v=7.4.2"></script>
+<script src="/js/schemes/pisces.js?v=7.4.2"></script>
+<script src="/js/next-boot.js?v=7.4.2"></script>
+
+
+
+  
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.4.2"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://theme-next.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  function loadComments() {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: {language: 'en',
+          page: {
+            url: "https://theme-next.org/docs/getting-started/data-files.html",
+            identifier: "docs/getting-started/data-files.html",
+            title: "Data Files"
+          }
+        }
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://theme-next.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  }
+    (function() {
+      var offsetTop = document.getElementById('comments').offsetTop - window.innerHeight;
+      if (offsetTop <= 0) {
+        // load directly when there's no a scrollbar
+        window.addEventListener('load', loadComments, false);
+      } else {
+        var disqus_scroll = () => {
+          // offsetTop may changes because of manually resizing browser window or lazy loading images.
+          var offsetTop = document.getElementById('comments').offsetTop - window.innerHeight;
+          var scrollTop = window.scrollY;
+
+          // pre-load comments a bit? (margin or anything else)
+          if (offsetTop - scrollTop < 60) {
+            window.removeEventListener('scroll', disqus_scroll);
+            loadComments();
+          }
+        };
+        window.addEventListener('scroll', disqus_scroll);
+      }
+    })();
+  
+</script>
+
+</body>
+</html>

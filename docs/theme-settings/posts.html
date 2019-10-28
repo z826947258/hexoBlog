@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.2">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.2" color="#222">
+  <meta name="yandex-verification" content="3ac9ae36ddebb425">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.2">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.4.2',
+    exturl: true,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":true},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: true,
+    lazyload: true,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"preload":true},
+    path: 'search.json',
+    motion: {"enable":false},
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="NexT User Docs – Theme Settings – Posts">
+<meta name="keywords" content="Hexo, NexT">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Posts">
+<meta property="og:url" content="https:&#x2F;&#x2F;theme-next.org&#x2F;docs&#x2F;theme-settings&#x2F;posts.html">
+<meta property="og:site_name" content="NexT">
+<meta property="og:description" content="NexT User Docs – Theme Settings – Posts">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-23T07:52:59.157Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://theme-next.org/docs/theme-settings/posts">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: false,
+    isPage: true,
+    isArchive: false
+  };
+</script>
+
+  <title>Posts | NexT
+  </title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">NexT</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <h1 class="site-subtitle" itemprop="description">Theme for Hexo</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-news">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-bullhorn"></i>News</a>
+
+  </li>
+        
+            
+  <li class="menu-item menu-item-docs">
+
+    <a href="/docs/" rel="section"><i class="fa fa-fw fa-book"></i>Docs</a>
+
+  </li>
+
+
+      
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">3</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0" title="Fork NexT on GitHub" aria-label="Fork NexT on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></span>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+  
+
+      
+
+        
+        <ul id="sub-menu" class="sub-menu menu">
+          
+            
+          
+          
+            
+                
+  <li class="menu-item menu-item-getting-started">
+
+    <a href="/docs/getting-started/" rel="section"><i class="fa fa-fw fa-flag"></i>Getting Started</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-theme-settings">
+
+    <a href="/docs/theme-settings/" rel="section"><i class="fa fa-fw fa-star"></i>Theme Settings</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-third-party-services">
+
+    <a href="/docs/third-party-services/" rel="section"><i class="fa fa-fw fa-plug"></i>Third Party Services</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-tag-plugins">
+
+    <a href="/docs/tag-plugins/" rel="section"><i class="fa fa-fw fa-rocket"></i>Tag Plugins</a>
+
+  </li>
+
+
+          
+              
+  <li class="menu-item menu-item-advanced-settings">
+
+    <a href="/docs/advanced-settings.html" rel="section"><i class="fa fa-fw fa-cogs"></i>Advanced Settings</a>
+
+  </li>
+
+
+          
+          
+              
+  <li class="menu-item menu-item-faq's">
+
+    <a href="/docs/faqs.html" rel="section"><i class="fa fa-fw fa-life-ring"></i>FAQ's</a>
+
+  </li>
+
+
+          
+          
+              
+  <li class="menu-item menu-item-troubleshooting">
+
+    <a href="/docs/troubleshooting.html" rel="section"><i class="fa fa-fw fa-bug"></i>Troubleshooting</a>
+
+  </li>
+
+
+          
+        </ul>
+        
+
+        
+
+                
+                
+
+                
+
+                    
+                    <ul id="sub-menu-2" class="sub-menu menu">
+                      
+                        
+  <li class="menu-item menu-item-footer">
+
+    <a href="/docs/theme-settings/footer.html" rel="section"><i class="fa fa-fw fa-sun-o"></i>Footer</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-seo">
+
+    <a href="/docs/theme-settings/seo.html" rel="section"><i class="fa fa-fw fa-external-link-square"></i>SEO</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-custom-pages">
+
+    <a href="/docs/theme-settings/custom-pages.html" rel="section"><i class="fa fa-fw fa-file-o"></i>Custom Pages</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-posts">
+
+    <a href="/docs/theme-settings/posts.html" rel="section"><i class="fa fa-fw fa-pencil-square-o"></i>Posts</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-sidebar">
+
+    <a href="/docs/theme-settings/sidebar.html" rel="section"><i class="fa fa-fw fa-bars"></i>Sidebar</a>
+
+  </li>
+
+
+                    </ul>
+                    
+                
+
+                
+                
+
+                
+                
+        
+      
+  
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+    
+    
+    
+    <div class="post-block" lang="en">
+      <header class="post-header">
+
+<h2 class="post-title" itemprop="name headline">Posts<span class="exturl post-edit-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvdGhlbWUtbmV4dC5vcmcvZWRpdC9zb3VyY2Uvc291cmNlL2RvY3MvdGhlbWUtc2V0dGluZ3MvcG9zdHMubWQ=" title="Edit this post"><i class="fa fa-pencil"></i></span>
+</h2>
+
+<div class="post-meta">
+    <div class="post-description">NexT User Docs – Theme Settings – Posts</div>
+  
+  <ul class="breadcrumb">
+          
+            <li><a href="/docs/">DOCS</a></li>
+            <li><a href="/docs/theme-settings/">THEME-SETTINGS</a></li>
+            <li>POSTS</li>
+          
+  </ul>
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <h3 id="Post-Settings"><a href="#Post-Settings" class="headerlink" title="Post Settings"></a>Post Settings</h3><h4 id="Page-Scroll"><a href="#Page-Scroll" class="headerlink" title="Page Scroll"></a>Page Scroll</h4><p>By default NexT scrolls page automatically to section which is under <a id="more"></a> mark. You can disable it by setting value <code>scroll_to_more</code> to <code>false</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">scroll_to_more:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h4 id="Preamble-Text"><a href="#Preamble-Text" class="headerlink" title="Preamble Text"></a>Preamble Text</h4><p>It&#39;s a common need to show some part of article in home page and then give a link to full article. NexT gives 3 ways to control how article is shown in home page. In other words, you can use following ways to show summary of articles and a <strong>Read More</strong> button.</p>
+<div class="tabs" id="preamble"><ul class="nav-tabs"><li class="tab active"><a href="#preamble-1"><code>excerpt_description</code></a></li><li class="tab"><a href="#preamble-2"><span class="label success">Tag more</span></a></li><li class="tab"><a href="#preamble-3"><span class="label warning">auto_excerpt</span></a></li></ul><div class="tab-content"><div class="tab-pane active" id="preamble-1"><p>If you have added <code>description</code> and set its value to your article summary in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZnJvbnQtbWF0dGVy" title="https://hexo.io/docs/front-matter">Front-matter<i class="fa fa-external-link"></i></span>, NexT excerpts <code>description</code> as preamble text in homepage by default. Without <code>description</code>, the full contents would be the preamble text in homepage.</p>
+<p>You can disable it by setting value <code>excerpt_description</code> to <code>false</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">excerpt_description:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="preamble-2"><p>Use <code>&lt;!-- more --&gt;</code> in your article to break your article manually, which is recommended by Hexo.</p></div><div class="tab-pane" id="preamble-3"><p>Next would use <code>150</code> characters from article header automatically as preamble text by setting value <code>auto_excerpt.enable</code> to <code>true</code>.</p>
+<p>You can configure it by editing value in <code>auto_excerpt</code> section in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure></div></div></div>
+<div class="note info">
+            <p>It is recommended to use <code>&lt;!-- more --&gt;</code> which can not only control what you want to show better, but also let Hexo&#39;s plugins use it easily.</p>
+          </div>
+<h4 id="Post-Meta-Display"><a href="#Post-Meta-Display" class="headerlink" title="Post Meta Display"></a>Post Meta Display</h4><p>NexT supports post created date, post updated date and post categories display.</p>
+<div class="tabs" id="postmeta"><ul class="nav-tabs"><li class="tab active"><a href="#postmeta-1"><code>item_text</code></a></li><li class="tab"><a href="#postmeta-2"><code>created_at</code></a></li><li class="tab"><a href="#postmeta-3"><code>updated_at</code></a></li><li class="tab"><a href="#postmeta-4"><code>categories</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="postmeta-1"><p>By default NexT shows the description text of post meta. You can disable it by setting value <code>post_meta.item_text</code> to <code>false</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">post_meta:</span></span><br><span class="line"><span class="attr">  item_text:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="postmeta-2"><p>By default NexT shows the post created date in post meta section and created time in popup. You can disable it by setting value <code>post_meta.created_at</code> to <code>false</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">post_meta:</span></span><br><span class="line"><span class="attr">  created_at:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="postmeta-3"><div class="tabs" id="postmeta1"><ul class="nav-tabs"><li class="tab active"><a href="#postmeta1-1"><code>enable</code></a></li><li class="tab"><a href="#postmeta1-2"><code>another_day</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="postmeta1-1"><p>By default NexT shows the post updated date in post meta section and updated time in popup. You can disable it by setting value <code>post_meta.updated_at.enable</code> to <code>false</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">post_meta:</span></span><br><span class="line"><span class="attr">  updated_at:</span></span><br><span class="line"><span class="attr">    enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="postmeta1-2"><p>By default, if updated/edited date is the same as created date, edited time would be displayed in popup message. You can disable it by setting value <code>post_meta.updated_at.another_day</code> to <code>false</code> in <span class="label primary">theme config file</span>.<br>In other words:</p>
+<ul>
+<li>If true, show updated date label only if <code>updated date</code> is different from <code>created date</code> (post edited in another day than was created).</li>
+<li>And if post was edited in same day as created, edited time will show in popup title under created time label.</li>
+<li>If false show anyway, but if post edited in same day, show only edited time.</li>
+</ul>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">post_meta:</span></span><br><span class="line"><span class="attr">  updated_at:</span></span><br><span class="line"><span class="attr">    another_day:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div></div></div></div><div class="tab-pane" id="postmeta-4"><p>By default NexT shows the post categorie in post meta section. You can disable it by setting value <code>post_meta.categories</code> to <code>false</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">post_meta:</span></span><br><span class="line"><span class="attr">  categories:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div></div></div>
+<h4 id="Post-Wordcount"><a href="#Post-Wordcount" class="headerlink" title="Post Wordcount"></a>Post Wordcount</h4><p>3rd-party plugin <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3dpbGxpbi9oZXhvLXdvcmRjb3VudA==" title="https://github.com/willin/hexo-wordcount"><code>hexo-wordcount</code><i class="fa fa-external-link"></i></span> was replaced by <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by1zeW1ib2xzLWNvdW50LXRpbWU=" title="https://github.com/theme-next/hexo-symbols-count-time"><code>hexo-symbols-count-time</code><i class="fa fa-external-link"></i></span> in 6.x versions because <code>hexo-symbols-count-time</code> no have any external nodejs dependencies, no have <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3dpbGxpbi9oZXhvLXdvcmRjb3VudC9pc3N1ZXMvNw==" title="https://github.com/willin/hexo-wordcount/issues/7">language filter<i class="fa fa-external-link"></i></span> which causes better performance on speed at site generation.</p>
+<div class="tabs" id="wordcount"><ul class="nav-tabs"><li class="tab active"><a href="#wordcount-1">Installation →</a></li><li class="tab"><a href="#wordcount-2">Hexo Config →</a></li><li class="tab"><a href="#wordcount-3">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="wordcount-1"><p>Install <code>hexo-symbols-count-time</code> by run following command in <span class="label info">site root dir</span>:</p>
+<pre><code>$ npm install hexo-symbols-count-time
+</code></pre></div><div class="tab-pane" id="wordcount-2"><p>Activate this plugin in <span class="label info">site config file</span> by enabled any option:</p>
+<div class="tabs" id="wordcount1"><ul class="nav-tabs"><li class="tab active"><a href="#wordcount1-1"><code>symbols</code></a></li><li class="tab"><a href="#wordcount1-2"><code>time</code></a></li><li class="tab"><a href="#wordcount1-3"><code>total_symbols</code></a></li><li class="tab"><a href="#wordcount1-4"><code>total_time</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="wordcount1-1"><p>By default NexT shows the number of post words in post meta section. You can disable it by setting value <code>symbols_count_time.symbols</code> to <code>false</code> in <span class="label info">site config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>hexo/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line"><span class="attr">  symbols:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="wordcount1-2"><p>By default NexT shows the estimated reading time of post in post meta section. You can disable it by setting value <code>symbols_count_time.time</code> to <code>false</code> in <span class="label info">site config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>hexo/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line"><span class="attr">  time:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="wordcount1-3"><p>By default NexT shows the number of all posts words in footer section. You can disable it by setting value <code>symbols_count_time.total_symbols</code> to <code>false</code> in <span class="label info">site config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>hexo/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line"><span class="attr">  total_symbols:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="wordcount1-4"><p>By default NexT shows the estimated reading time of all posts in footer section. You can disable it by setting value <code>symbols_count_time.total_time</code> to <code>false</code> in <span class="label info">site config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>hexo/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line"><span class="attr">  total_time:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div></div></div></div><div class="tab-pane" id="wordcount-3"><p>After the plugin enabled, you may adjust options in <code>symbols_count_time</code> section in <span class="label primary">theme config file</span>:</p>
+<div class="tabs" id="wordcount2"><ul class="nav-tabs"><li class="tab active"><a href="#wordcount2-1"><code>separated_meta</code></a></li><li class="tab"><a href="#wordcount2-2"><code>item_text_post</code></a></li><li class="tab"><a href="#wordcount2-3"><code>item_text_total</code></a></li><li class="tab"><a href="#wordcount2-4"><code>awl</code></a></li><li class="tab"><a href="#wordcount2-5"><code>wpm</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="wordcount2-1"><p>By default NexT shows the words counts and estimated reading time in a separated line. You can add them into one line by setting value <code>symbols_count_time.separated_meta</code> to <code>false</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line"><span class="attr">  separated_meta:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="wordcount2-2"><p>By default NexT shows the text description of the words counts and estimated reading time in post meta section. You can disable it by setting value <code>symbols_count_time.item_text_post</code> to <code>false</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line"><span class="attr">  item_text_post:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="wordcount2-3"><p>By default NexT doesn&#39;t shows the text description of the words counts and estimated reading time in footer section. You can enable it by setting value <code>symbols_count_time.item_text_total</code> to <code>false</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line"><span class="attr">  item_text_total:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="wordcount2-4"><p><code>awl</code> means the average Word Length (chars count in word). You can check this <span class="exturl" data-url="aHR0cHM6Ly9jaGFyYWN0ZXJjb3VudHRvb2wuY29tLw==" title="https://charactercounttool.com/">here<i class="fa fa-external-link"></i></span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line"><span class="attr">  awl:</span> <span class="number">4</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="wordcount2-5"><p><code>wpm</code> means the average words per minute. You can check this <span class="exturl" data-url="aHR0cHM6Ly93b3JkY291bnRlci5uZXQv" title="https://wordcounter.net/">here<i class="fa fa-external-link"></i></span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line"><span class="attr">  wpm:</span> <span class="number">275</span></span><br></pre></td></tr></table></figure></div></div></div></div></div></div>
+<h4 id="Tag-Icon"><a href="#Tag-Icon" class="headerlink" title="Tag Icon"></a>Tag Icon</h4><p>By default, tags at the bottom of posts have a symbol # at there left side.</p>
+<p>If you prefer icon instead of symbol, edit <span class="label primary">theme config file</span> like following:</p>
+  <figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">tag_icon:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h4 id="WeChat-Subscribing"><a href="#WeChat-Subscribing" class="headerlink" title="WeChat Subscribing"></a>WeChat Subscribing</h4><p>Show your WeChat public account QRcode after each article, subscribing blog by simply scanning.</p>
+<ol>
+<li>Download your QRcode from WeChat Public Platform, and save it under <code>source/uploads/</code> <span class="label info">site directory</span>.</li>
+<li><p>Edit <span class="label primary">theme config file</span> like following:</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">wechat_subscriber:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  qcode:</span> <span class="string">/uploads/wechat-qcode.jpg</span></span><br><span class="line"><span class="attr">  description:</span> <span class="string">Welcome</span> <span class="string">to</span> <span class="string">scan</span> <span class="string">the</span> <span class="string">WeChat</span> <span class="string">Public</span> <span class="string">Account</span> <span class="string">QRcode</span> <span class="string">and</span> <span class="string">subscribe</span> <span class="string">my</span> <span class="string">blog!</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h4 id="Reward-Donate"><a href="#Reward-Donate" class="headerlink" title="Reward (Donate)"></a>Reward (Donate)</h4><p>More and more platform (WeChat public accounts, Weibo, Jianshu, Baidu Reward) supports reward (donate). To catch paid reading trends, we added reward feature, supports WeChat Pay, Alipay and Bitcoin. What you need is:</p>
+<ol>
+<li>Get your WeChat Pay / Alipay / Bitcoin receive money QRcode image(s) and put into <code>source/images</code> under <span class="label primary">theme directory</span> or upload it(them) to an image cloud to get the absolute HTTP address(es).</li>
+<li><p>Set needed values in  <span class="label primary">theme config file</span>:</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Reward (Donate)</span></span><br><span class="line"><span class="attr">reward_settings:</span></span><br><span class="line">  <span class="comment"># If true, reward would be displayed in every article by default.</span></span><br><span class="line">  <span class="comment"># You can show or hide reward in a specific article throuth `reward: true | false` in Front-matter.</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  animation:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment">#comment: Donate comment here</span></span><br><span class="line"></span><br><span class="line"><span class="attr">reward:</span></span><br><span class="line"><span class="attr">  wechatpay:</span> <span class="string">/images/wechatpay.png</span></span><br><span class="line"><span class="attr">  alipay:</span> <span class="string">/images/alipay.png</span></span><br><span class="line"><span class="attr">  bitcoin:</span> <span class="string">/images/bitcoin.png</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>You can also add QRcode of other platforms, e.g.<br><figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">paypal:</span> <span class="string">/images/paypal.png</span></span><br><span class="line"><span class="attr">monero:</span> <span class="string">/images/monero.png</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="Related-popular-posts-REDOCS"><a href="#Related-popular-posts-REDOCS" class="headerlink" title="Related popular posts (REDOCS)"></a>Related popular posts (REDOCS)</h4><p>NexT supports the related posts functionality according to <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RlYTMvaGV4by1yZWxhdGVkLXBvcHVsYXItcG9zdHM=" title="https://github.com/tea3/hexo-related-popular-posts">hexo-related-popular-posts<i class="fa fa-external-link"></i></span>.</p>
+<div class="tabs" id="related_posts"><ul class="nav-tabs"><li class="tab active"><a href="#related_posts-1"><code>enable</code></a></li><li class="tab"><a href="#related_posts-2"><code>title</code></a></li><li class="tab"><a href="#related_posts-3"><code>display_in_home</code></a></li><li class="tab"><a href="#related_posts-4"><code>params</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="related_posts-1"><p>You can enable it by setting value <code>related_posts.enable</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">related_posts:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="related_posts-2"><p>By default NexT uses &#39;Related Posts&#39; as title by default. You can configure it by editing value in <code>related_posts.title</code> section in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">related_posts:</span></span><br><span class="line"><span class="attr">  title:</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="related_posts-3"><p>By default NexT doesn&#39;t show the related posts in homepage. You can enable it by setting value <code>related_posts.display_in_home</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">related_posts:</span></span><br><span class="line"><span class="attr">  display_in_home:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="related_posts-4"><p>By default NexT shows up to 5 related posts and their titles without any date, image and excerpt. You can change the default behavior by editing values of <code>related_posts.params</code> in <span class="label primary">theme config file</span>.</p>
+<div class="tabs" id="related_posts1"><ul class="nav-tabs"><li class="tab active"><a href="#related_posts1-1"><code>maxCount</code></a></li><li class="tab"><a href="#related_posts1-2"><code>PPMixingRate</code></a></li><li class="tab"><a href="#related_posts1-3"><code>isDate</code></a></li><li class="tab"><a href="#related_posts1-4"><code>isImage</code></a></li><li class="tab"><a href="#related_posts1-5"><code>isExcerpt</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="related_posts1-1"><p>Maximum count of a list, change it by yourself.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">related_posts:</span></span><br><span class="line"><span class="attr">  params:</span></span><br><span class="line"><span class="attr">    maxCount:</span> <span class="number">5</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="related_posts1-2"><p>Mixing ratio of popular posts and related posts.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">related_posts:</span></span><br><span class="line"><span class="attr">  params:</span></span><br><span class="line">    <span class="comment">#PPMixingRate: 0.0</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="related_posts1-3"><p>Uncomment and set true to display dates of related post.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">related_posts:</span></span><br><span class="line"><span class="attr">  params:</span></span><br><span class="line"><span class="attr">    isDate:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="related_posts1-4"><p>Uncomment and set true to display images of related posts.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">related_posts:</span></span><br><span class="line"><span class="attr">  params:</span></span><br><span class="line"><span class="attr">    isImage:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="related_posts1-5"><p>Uncomment and set true to display excerpts of related posts.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">related_posts:</span></span><br><span class="line"><span class="attr">  params:</span></span><br><span class="line"><span class="attr">    isExcerpt:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div></div></div></div></div></div>
+<h4 id="Post-Edit"><a href="#Post-Edit" class="headerlink" title="Post Edit"></a>Post Edit</h4><p>NexT supports the edit functionality of your posts. By enabling this feature, users can quickly browse and modify the blog&#39;s source code on GitHub.</p>
+<div class="tabs" id="post_edit"><ul class="nav-tabs"><li class="tab active"><a href="#post_edit-1"><code>enable</code></a></li><li class="tab"><a href="#post_edit-2"><code>url</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="post_edit-1"><p>You can enable it by setting value <code>post_edit.enable</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">post_edit:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="post_edit-2"><p>You should create a source repository of your post files. The <code>url</code> setting depends on the source project in github.</p>
+<ul>
+<li>For site repository<ul>
+<li>Link for view source: <code>url: https://github.com/.../tree/master/source/_posts/</code></li>
+<li>Link for fork &amp; edit: <code>url: https://github.com/.../edit/master/source/_posts/</code></li>
+</ul>
+</li>
+<li>For post repository<ul>
+<li>Link for view source: <code>url: https://github.com/.../_posts/tree/master/</code></li>
+<li>Link for fork &amp; edit: <code>url: https://github.com/.../_posts/edit/master/</code></li>
+</ul>
+</li>
+</ul>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">post_edit:</span></span><br><span class="line"><span class="attr">  url:</span></span><br></pre></td></tr></table></figure></div></div></div>
+
+      </div>
+      
+      
+      
+    </div>
+    
+  <ul class="breadcrumb">
+          
+            <li><a href="/docs/">DOCS</a></li>
+            <li><a href="/docs/theme-settings/">THEME-SETTINGS</a></li>
+            <li>POSTS</li>
+          
+  </ul>
+
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments" id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Post-Settings"><span class="nav-number">1.</span> <span class="nav-text">Post Settings</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Page-Scroll"><span class="nav-number">1.1.</span> <span class="nav-text">Page Scroll</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Preamble-Text"><span class="nav-number">1.2.</span> <span class="nav-text">Preamble Text</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Post-Meta-Display"><span class="nav-number">1.3.</span> <span class="nav-text">Post Meta Display</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Post-Wordcount"><span class="nav-number">1.4.</span> <span class="nav-text">Post Wordcount</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Tag-Icon"><span class="nav-number">1.5.</span> <span class="nav-text">Tag Icon</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#WeChat-Subscribing"><span class="nav-number">1.6.</span> <span class="nav-text">WeChat Subscribing</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Reward-Donate"><span class="nav-number">1.7.</span> <span class="nav-text">Reward (Donate)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Related-popular-posts-REDOCS"><span class="nav-number">1.8.</span> <span class="nav-text">Related popular posts (REDOCS)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Post-Edit"><span class="nav-number">1.9.</span> <span class="nav-text">Post Edit</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="Theme NexT"
+    src="/images/apple-touch-icon-next.png">
+  <p class="site-author-name" itemprop="name">Theme NexT</p>
+  <div class="site-description" itemprop="description">Stay Simple. Stay NexT.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQ=" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;theme-next"><i class="fa fa-fw fa-github"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:support@theme-next.org" title="E-Mail &amp;rarr; mailto:support@theme-next.org"><i class="fa fa-fw fa-envelope"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXR0ZXIuaW0vdGhlbWUtbmV4dA==" title="Gitter &amp;rarr; https:&#x2F;&#x2F;gitter.im&#x2F;theme-next"><i class="fa fa-fw fa-github-alt"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9yaW90LmltL2FwcC8jL3Jvb20vI05leFQ6bWF0cml4Lm9yZw==" title="Riot &amp;rarr; https:&#x2F;&#x2F;riot.im&#x2F;app&#x2F;#&#x2F;room&#x2F;#NexT:matrix.org"><i class="fa fa-fw fa-bullhorn"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90Lm1lL2pvaW5jaGF0L0dVTkhYQS12WmtnU011aW1MMVZtTXc=" title="Telegram [Chat] &amp;rarr; https:&#x2F;&#x2F;t.me&#x2F;joinchat&#x2F;GUNHXA-vZkgSMuimL1VmMw"><i class="fa fa-fw fa-telegram"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90Lm1lL3RoZW1lX25leHQ=" title="Telegram [News] &amp;rarr; https:&#x2F;&#x2F;t.me&#x2F;theme_next"><i class="fa fa-fw fa-paper-plane"></i></span>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC91bmRlZmluZWQ="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+  </div>
+
+
+<div class="cc-license motion-element" itemprop="sponsor">
+  <span class="exturl cc-opacity" title="Deploy with Netlify → https://www.netlify.com" data-url="aHR0cHM6Ly93d3cubmV0bGlmeS5jb20="><img width="80" src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Netlify"></span>
+</div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2014 – 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">NexT</span>
+</div>
+  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://theme-next.org/" class="theme-link">NexT.Gemini</a> v7.4.2
+  </div><div class="footer-custom">
+Theme source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0">here</span><br>
+Website source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvdGhlbWUtbmV4dC5vcmc=">here</span>
+</div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+<script src="/js/utils.js?v=7.4.2"></script>
+<script src="/js/schemes/pisces.js?v=7.4.2"></script>
+<script src="/js/next-boot.js?v=7.4.2"></script>
+
+
+
+  
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.4.2"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://theme-next.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  function loadComments() {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: {language: 'en',
+          page: {
+            url: "https://theme-next.org/docs/theme-settings/posts.html",
+            identifier: "docs/theme-settings/posts.html",
+            title: "Posts"
+          }
+        }
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://theme-next.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  }
+    (function() {
+      var offsetTop = document.getElementById('comments').offsetTop - window.innerHeight;
+      if (offsetTop <= 0) {
+        // load directly when there's no a scrollbar
+        window.addEventListener('load', loadComments, false);
+      } else {
+        var disqus_scroll = () => {
+          // offsetTop may changes because of manually resizing browser window or lazy loading images.
+          var offsetTop = document.getElementById('comments').offsetTop - window.innerHeight;
+          var scrollTop = window.scrollY;
+
+          // pre-load comments a bit? (margin or anything else)
+          if (offsetTop - scrollTop < 60) {
+            window.removeEventListener('scroll', disqus_scroll);
+            loadComments();
+          }
+        };
+        window.addEventListener('scroll', disqus_scroll);
+      }
+    })();
+  
+</script>
+
+</body>
+</html>

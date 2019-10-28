@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.2">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.2" color="#222">
+  <meta name="yandex-verification" content="3ac9ae36ddebb425">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.2">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.4.2',
+    exturl: true,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":true},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: true,
+    lazyload: true,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"preload":true},
+    path: 'search.json',
+    motion: {"enable":false},
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="NexT User Docs – Theme Settings">
+<meta name="keywords" content="Hexo, NexT">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Theme Settings">
+<meta property="og:url" content="https:&#x2F;&#x2F;theme-next.org&#x2F;docs&#x2F;theme-settings&#x2F;index.html">
+<meta property="og:site_name" content="NexT">
+<meta property="og:description" content="NexT User Docs – Theme Settings">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-23T07:52:59.156Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://theme-next.org/docs/theme-settings/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: false,
+    isPage: true,
+    isArchive: false
+  };
+</script>
+
+  <title>Theme Settings | NexT
+  </title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">NexT</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <h1 class="site-subtitle" itemprop="description">Theme for Hexo</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-news">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-bullhorn"></i>News</a>
+
+  </li>
+        
+            
+  <li class="menu-item menu-item-docs">
+
+    <a href="/docs/" rel="section"><i class="fa fa-fw fa-book"></i>Docs</a>
+
+  </li>
+
+
+      
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">3</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0" title="Fork NexT on GitHub" aria-label="Fork NexT on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></span>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+  
+
+      
+
+        
+        <ul id="sub-menu" class="sub-menu menu">
+          
+            
+          
+          
+            
+                
+  <li class="menu-item menu-item-getting-started">
+
+    <a href="/docs/getting-started/" rel="section"><i class="fa fa-fw fa-flag"></i>Getting Started</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-theme-settings">
+
+    <a href="/docs/theme-settings/" rel="section"><i class="fa fa-fw fa-star"></i>Theme Settings</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-third-party-services">
+
+    <a href="/docs/third-party-services/" rel="section"><i class="fa fa-fw fa-plug"></i>Third Party Services</a>
+
+  </li>
+
+
+          
+            
+                
+  <li class="menu-item menu-item-tag-plugins">
+
+    <a href="/docs/tag-plugins/" rel="section"><i class="fa fa-fw fa-rocket"></i>Tag Plugins</a>
+
+  </li>
+
+
+          
+              
+  <li class="menu-item menu-item-advanced-settings">
+
+    <a href="/docs/advanced-settings.html" rel="section"><i class="fa fa-fw fa-cogs"></i>Advanced Settings</a>
+
+  </li>
+
+
+          
+          
+              
+  <li class="menu-item menu-item-faq's">
+
+    <a href="/docs/faqs.html" rel="section"><i class="fa fa-fw fa-life-ring"></i>FAQ's</a>
+
+  </li>
+
+
+          
+          
+              
+  <li class="menu-item menu-item-troubleshooting">
+
+    <a href="/docs/troubleshooting.html" rel="section"><i class="fa fa-fw fa-bug"></i>Troubleshooting</a>
+
+  </li>
+
+
+          
+        </ul>
+        
+
+        
+
+                
+                
+
+                
+
+                    
+                    <ul id="sub-menu-2" class="sub-menu menu">
+                      
+                        
+  <li class="menu-item menu-item-footer">
+
+    <a href="/docs/theme-settings/footer.html" rel="section"><i class="fa fa-fw fa-sun-o"></i>Footer</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-seo">
+
+    <a href="/docs/theme-settings/seo.html" rel="section"><i class="fa fa-fw fa-external-link-square"></i>SEO</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-custom-pages">
+
+    <a href="/docs/theme-settings/custom-pages.html" rel="section"><i class="fa fa-fw fa-file-o"></i>Custom Pages</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-posts">
+
+    <a href="/docs/theme-settings/posts.html" rel="section"><i class="fa fa-fw fa-pencil-square-o"></i>Posts</a>
+
+  </li>
+
+
+                        
+  <li class="menu-item menu-item-sidebar">
+
+    <a href="/docs/theme-settings/sidebar.html" rel="section"><i class="fa fa-fw fa-bars"></i>Sidebar</a>
+
+  </li>
+
+
+                    </ul>
+                    
+                
+
+                
+                
+
+                
+                
+        
+      
+  
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+    
+    
+    
+    <div class="post-block" lang="en">
+      <header class="post-header">
+
+<h2 class="post-title" itemprop="name headline">Theme Settings<span class="exturl post-edit-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvdGhlbWUtbmV4dC5vcmcvZWRpdC9zb3VyY2Uvc291cmNlL2RvY3MvdGhlbWUtc2V0dGluZ3MvaW5kZXgubWQ=" title="Edit this post"><i class="fa fa-pencil"></i></span>
+</h2>
+
+<div class="post-meta">
+    <div class="post-description">NexT User Docs – Theme Settings</div>
+  
+  <ul class="breadcrumb">
+          
+            <li><a href="/docs/">DOCS</a></li>
+          <li>THEME-SETTINGS</li>
+        
+  </ul>
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <p>NexT insists to hide complex details and gives you a simple but flexible config, so you can use it easily.</p>
+<h3 id="Console-Reminder"><a href="#Console-Reminder" class="headerlink" title="Console Reminder"></a>Console Reminder</h3><p>Next supports automatic check for updates and alerts in the console. Set the value <code>reminder</code> to <code>true</code> in <code>minify</code> section in <span class="label primary">theme config file</span> as following:</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Console reminder if new version released.</span></span><br><span class="line"><span class="attr">reminder:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<h3 id="Cache-Support"><a href="#Cache-Support" class="headerlink" title="Cache Support"></a>Cache Support</h3><p>NexT v6+ allows to cache content generation. Set the value <code>enable</code> to <code>true</code> in <code>cache</code> section in <span class="label primary">theme config file</span> as following:</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Allow to cache content generation. Introduced in NexT v6.0.0.</span></span><br><span class="line"><span class="attr">cache:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h3 id="Minify-Support"><a href="#Minify-Support" class="headerlink" title="Minify Support"></a>Minify Support</h3><div class="note info">
+            <p>This feature is currently a bit simplistic, and we will further improve it in the future.</p>
+          </div>
+<p>NexT allows to minify hexo generation. Set the value <code>minify</code> to <code>true</code> in <span class="label primary">theme config file</span> as following:</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Remove unnecessary files after hexo generate.</span></span><br><span class="line"><span class="attr">minify:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h3 id="Custom-Style-Support"><a href="#Custom-Style-Support" class="headerlink" title="Custom Style Support"></a>Custom Style Support</h3><p>Like <a href="/docs/getting-started/data-files">Next Data files</a>, you can put all your custom styles into one place (<code>hexo/source/_data</code>). Add your custom files in <code>hexo/source/_data</code> and uncomment needed files under the <code>custom_file_path</code> section in <span class="label primary">theme config file</span> as following:</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># For example, you want to put your custom styles file</span></span><br><span class="line"><span class="comment"># outside theme directory in root `source/_data`, set</span></span><br><span class="line"><span class="comment"># `styles: source/_data/styles.styl`</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.swig</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.swig</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.swig</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.swig</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.swig</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.swig</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.swig</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="comment">#style: source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
+<h3 id="RSS-Support"><a href="#RSS-Support" class="headerlink" title="RSS Support"></a>RSS Support</h3><p>There are three RSS options in NexT to fit different cases.<br>Edit <span class="label primary">theme config file</span> and set the value of <code>rss</code>:</p>
+<ul>
+<li><code>false</code>: Disable RSS, which won&#39;t show links on page.</li>
+<li>Leave Blank: Use Hexo to generate feed and insert links automatically. You may need to install <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvLWdlbmVyYXRvci1mZWVk" title="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed<i class="fa fa-external-link"></i></span> plugin with npm firstly.</li>
+<li>Concrete URL: This means you have generate Feed in advance.</li>
+</ul>
+<h3 id="Creative-Commons"><a href="#Creative-Commons" class="headerlink" title="Creative Commons"></a>Creative Commons</h3><p>NexT supports the display of <span class="exturl" data-url="aHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcv" title="http://creativecommons.org/">Creative Commons 4.0 International License<i class="fa fa-external-link"></i></span> in sidebar and post including <code>by</code>, <code>by-nc</code>, <code>by-nc-nd</code>, <code>by-nc-sa</code>, <code>by-nd</code>, <code>by-sa</code>, <code>zero</code>. These licenses allow creators to communicate which rights they reserve, and which rights they waive for the benefit of recipients or other creators.</p>
+<p>You can configure it by editing values in <code>creative_commons</code> section in <span class="label primary">theme config file</span>, for example:</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">creative_commons:</span></span><br><span class="line"><span class="attr">  license:</span> <span class="string">by-nc-sa</span></span><br><span class="line"><span class="attr">  sidebar:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  post:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  language:</span> <span class="string">deed.zh</span></span><br></pre></td></tr></table></figure>
+<h3 id="Text-Align"><a href="#Text-Align" class="headerlink" title="Text Align"></a>Text Align</h3><p>NexT allows to customize the text alignment in posts / pages. The <code>text-align</code> CSS property sets the horizontal alignment of a block element or table-cell box.</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Values</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>start</code></td>
+<td>The same as <code>left</code> if direction is left-to-right and <code>right</code> if direction is right-to-left.</td>
+</tr>
+<tr>
+<td><code>end</code></td>
+<td>The same as <code>right</code> if direction is left-to-right and <code>left</code> if direction is right-to-left.</td>
+</tr>
+<tr>
+<td><code>left</code></td>
+<td>The inline contents are aligned to the left edge of the line box.</td>
+</tr>
+<tr>
+<td><code>right</code></td>
+<td>The inline contents are aligned to the right edge of the line box.</td>
+</tr>
+<tr>
+<td><code>center</code></td>
+<td>The inline contents are centered within the line box.</td>
+</tr>
+<tr>
+<td><code>justify</code></td>
+<td>The inline contents are justified. Text should be spaced to line up its left and right edges to the left and right edges of the line box, except for the last line.</td>
+</tr>
+<tr>
+<td><code>justify-all</code></td>
+<td>Same as <code>justify</code>, but also forces the last line to be justified.</td>
+</tr>
+<tr>
+<td><code>match-parent</code></td>
+<td>Similar to <code>inherit</code>, but the values <code>start</code> and <code>end</code> are calculated according to the parent&#39;s direction and are replaced by the appropriate <code>left</code> or <code>right</code> value.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Set the text alignment in the posts.</span></span><br><span class="line"><span class="attr">text_align:</span></span><br><span class="line">  <span class="comment"># Available values: start | end | left | right | center | justify | justify-all | match-parent</span></span><br><span class="line"><span class="attr">  desktop:</span> <span class="string">justify</span></span><br><span class="line"><span class="attr">  mobile:</span> <span class="string">justify</span></span><br></pre></td></tr></table></figure>
+<h3 id="Mobile-Devices-Adaptation"><a href="#Mobile-Devices-Adaptation" class="headerlink" title="Mobile Devices Adaptation"></a>Mobile Devices Adaptation</h3><div class="tabs" id="mobile-adaptation"><ul class="nav-tabs"><li class="tab active"><a href="#mobile-adaptation-1"><code>mobile_layout_economy</code></a></li><li class="tab"><a href="#mobile-adaptation-2"><code>android_chrome_color</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="mobile-adaptation-1"><p>If you want to reduce padding/margin indents on devices with narrow width, you can enable it by setting value <code>mobile_layout_economy</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">mobile_layout_economy:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="mobile-adaptation-2"><p>By default NexT uses black-deep (<code>#222</code>) as the color of android Chrome header panel. You can configure it by editing values with Hex color in <code>android_chrome_color</code> section in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">android_chrome_color:</span> <span class="string">"#222"</span></span><br></pre></td></tr></table></figure></div></div></div>
+<h3 id="Rainbow-Safari"><a href="#Rainbow-Safari" class="headerlink" title="Rainbow Safari"></a>Rainbow Safari</h3><p>If you want to hide sticky headers and color the menu bar on Safari (iOS / macOS), you can set <code>safari_rainbow</code> to <code>true</code>. More information here: <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2tvb2xlL3JhaW5ib3dzYWZhcmk=" title="https://github.com/koole/rainbowsafari">rainbowsafari<i class="fa fa-external-link"></i></span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">safari_rainbow:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h3 id="Custom-Scrollbar-Support"><a href="#Custom-Scrollbar-Support" class="headerlink" title="Custom Scrollbar Support"></a>Custom Scrollbar Support</h3><p>NexT supports the scrollbar personalization.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">custom_scrollbar:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<div class="note danger">
+            <p>Only works on webkit based browsers.</p>
+          </div>
+<h3 id="Custom-Logo-Support"><a href="#Custom-Logo-Support" class="headerlink" title="Custom Logo Support"></a>Custom Logo Support</h3><p>NexT supports the site logo personalization.</p>
+<p>You can enable it by adding images&#39;s url to <code>custom_logo</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">custom_logo:</span> <span class="string">/uploads/custom-logo.jpg</span></span><br></pre></td></tr></table></figure>
+<div class="note danger">
+            <p>Scheme Mist does not support custom logo setting.</p>
+          </div>
+<h3 id="Codeblock-Style"><a href="#Codeblock-Style" class="headerlink" title="Codeblock Style"></a>Codeblock Style</h3><div class="tabs" id="codeblock"><ul class="nav-tabs"><li class="tab active"><a href="#codeblock-1"><code>highlight_theme</code></a></li><li class="tab"><a href="#codeblock-2"><code>copy_button</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="codeblock-1"><p>Code Highlight Theme</p>
+<p>NexT uses <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2Nocmlza2VtcHNvbi90b21vcnJvdy10aGVtZQ==" title="https://github.com/chriskempson/tomorrow-theme">Tomorrow Theme<i class="fa fa-external-link"></i></span> to support code highlight.<br>Default style is white (<code>normal</code>) and there are 8 styles to choose:</p>
+<ul>
+<li><code>normal</code></li>
+<li><code>night</code></li>
+<li><code>night blue</code></li>
+<li><code>night bright</code></li>
+<li><code>night eighties</code></li>
+<li><code>solarized</code></li>
+<li><code>solarized dark</code></li>
+<li><code>galactic</code></li>
+</ul>
+<p>Change the value of <code>highlight_theme</code> to choose the highlight style you like, for example:</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">codeblock:</span></span><br><span class="line">  <span class="comment"># Code Highlight theme</span></span><br><span class="line">  <span class="comment"># Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic</span></span><br><span class="line">  <span class="comment"># https://github.com/chriskempson/tomorrow-theme</span></span><br><span class="line"><span class="attr">  highlight_theme:</span> <span class="string">night</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="codeblock-2"><p>NexT supports the copy-and-paste functionality of codeblock.</p>
+<div class="tabs" id="codeblock1"><ul class="nav-tabs"><li class="tab active"><a href="#codeblock1-1"><code>enable</code></a></li><li class="tab"><a href="#codeblock1-2"><code>show_result</code></a></li><li class="tab"><a href="#codeblock1-3"><code>style</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="codeblock1-1"><p>You can enable it by setting value <code>copy_button.enable</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">codeblock:</span></span><br><span class="line"><span class="attr">  copy_button:</span></span><br><span class="line"><span class="attr">    enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="codeblock1-2"><p>By default NexT doesn&#39;t show copy results of the copy-and-paste functionality. You can also enable it by setting value <code>copy_button.show_result</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">codeblock:</span></span><br><span class="line"><span class="attr">  copy_button:</span></span><br><span class="line"><span class="attr">    show_result:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="codeblock1-3"><p>With <code>style</code> option, you can change your copy button style.<br>There are three style available currently: <code>default</code>(Just leave it empty), <code>flat</code> and <code>mac</code>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">codeblock:</span></span><br><span class="line"><span class="attr">  copy_button:</span></span><br><span class="line"><span class="attr">    style:</span> <span class="string">flat</span></span><br></pre></td></tr></table></figure></div></div></div></div></div></div>
+<h3 id="Reading-Progress"><a href="#Reading-Progress" class="headerlink" title="Reading Progress"></a>Reading Progress</h3><p>NexT supports the page scroll reading progress indicator.</p>
+<p>You can enable it by setting value <code>reading_progress.enable</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">reading_progress:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  color:</span> <span class="string">"#37c6c0"</span></span><br><span class="line"><span class="attr">  height:</span> <span class="number">2</span><span class="string">px</span></span><br></pre></td></tr></table></figure>
+<h3 id="Bookmark"><a href="#Bookmark" class="headerlink" title="Bookmark"></a>Bookmark</h3><p>Bookmark is a plugin that allow the users save their reading progress. Users could just click the bookmark icon (like 🔖) in left-top of the page to save the scroll position. And when they visit your blog in the next time, they can resume the last scroll position of each page automatically.</p>
+<p>You can enable it by setting value <code>bookmark.enable</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">bookmark:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment"># Customize the color of the bookmark.</span></span><br><span class="line"><span class="attr">  color:</span> <span class="string">"#222"</span></span><br><span class="line">  <span class="comment"># If auto, save the reading progress when closing the page or clicking the bookmark-icon.</span></span><br><span class="line">  <span class="comment"># If manual, only save it by clicking the bookmark-icon.</span></span><br><span class="line"><span class="attr">  save:</span> <span class="string">auto</span></span><br></pre></td></tr></table></figure>
+<h3 id="GitHub-Banner"><a href="#GitHub-Banner" class="headerlink" title="GitHub Banner"></a>GitHub Banner</h3><p>NexT provides <code>Follow me on GitHub</code> banner in right-top corner.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Follow me on GitHub banner in right-top corner.</span></span><br><span class="line"><span class="attr">github_banner:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  permalink:</span> <span class="attr">https://github.com/yourname</span></span><br><span class="line"><span class="attr">  title:</span> <span class="string">Follow</span> <span class="string">me</span> <span class="string">on</span> <span class="string">GitHub</span></span><br></pre></td></tr></table></figure>
+<div class="tabs" id="github-banner"><ul class="nav-tabs"><li class="tab active"><a href="#github-banner-1"><code>permalink</code></a></li><li class="tab"><a href="#github-banner-2"><code>title</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="github-banner-1"><p><code>permalink</code> → is the specified link must have full url path.</p></div><div class="tab-pane" id="github-banner-2"><p><code>title</code> → is the title and aria-label name.</p></div></div></div>
+<p>You can set <code>enable</code> to <code>true</code> and add your own GitHub link.</p>
+<h3 id="Fonts-Customization"><a href="#Fonts-Customization" class="headerlink" title="Fonts Customization"></a>Fonts Customization</h3><p>To solve the unstable of <span class="exturl" data-url="aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9mb250cw==" title="https://www.google.com/fonts">Google Fonts API<i class="fa fa-external-link"></i></span> in some countries, NexT supports setting fonts. By using this feature you can assign URL of fonts library. And NexT gives you 5 specific font settings, they are:</p>
+<ul>
+<li>Global Font: Font used in the whole site.</li>
+<li>Title Font: Font used by site title.</li>
+<li>Headlines Font: Font used by titles in articles (h1, h2, h3, h4, h5, h6).</li>
+<li>Article Font: Font used by articles.</li>
+<li>Code Font: Font used by code blocks in articles.</li>
+</ul>
+<p>Each font will be used as the first font of this class, NexT will fallback to internal font settings if they are unavalible.</p>
+<ul>
+<li>Non-code Font: Fallback to <code>&quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif</code></li>
+<li>Code Font: Fallback to <code>consolas, Menlo, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, monospace</code></li>
+</ul>
+<p>Plus each section has a <code>external</code> attribute, this controls whether to use the font library CDN.<br>Use this can help you to use fonts installed in system and reduce unnecessary requests.</p>
+<figure class="highlight yml"><figcaption><span>next/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">font:</span></span><br><span class="line">  <span class="comment"># Use custom fonts families or not.</span></span><br><span class="line">  <span class="comment"># Depended options: `external` and `family`.</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Uri of fonts host, e.g. //fonts.googleapis.com (Default).</span></span><br><span class="line"><span class="attr">  host:</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font options:</span></span><br><span class="line">  <span class="comment"># `external: true` will load this font family from `host` above.</span></span><br><span class="line">  <span class="comment"># `family: Times New Roman`. Without any quotes.</span></span><br><span class="line">  <span class="comment"># `size: x.x`. Use `em` as unit. Default: 1 (16px)</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Global font settings used for all elements inside &lt;body&gt;.</span></span><br><span class="line"><span class="attr">  global:</span></span><br><span class="line"><span class="attr">    external:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    family:</span> <span class="string">Monda</span></span><br><span class="line"><span class="attr">    size:</span> <span class="number">1.125</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for site title (.site-title).</span></span><br><span class="line"><span class="attr">  title:</span></span><br><span class="line"><span class="attr">    external:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    family:</span> <span class="string">Lobster</span> <span class="string">Two</span></span><br><span class="line"><span class="attr">    size:</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for headlines (&lt;h1&gt; to &lt;h6&gt;).</span></span><br><span class="line"><span class="attr">  headings:</span></span><br><span class="line"><span class="attr">    external:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    family:</span> <span class="string">Amita</span></span><br><span class="line"><span class="attr">    size:</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for posts (.post-body).</span></span><br><span class="line"><span class="attr">  posts:</span></span><br><span class="line"><span class="attr">    external:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    family:</span> <span class="string">Roboto</span> <span class="string">Slab</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for &lt;code&gt; and code blocks.</span></span><br><span class="line"><span class="attr">  codes:</span></span><br><span class="line"><span class="attr">    external:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    family:</span> <span class="string">PT</span> <span class="string">Mono</span></span><br></pre></td></tr></table></figure>
+
+      </div>
+      
+      
+      
+    </div>
+    
+  <ul class="breadcrumb">
+          
+            <li><a href="/docs/">DOCS</a></li>
+          <li>THEME-SETTINGS</li>
+        
+  </ul>
+
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments" id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Console-Reminder"><span class="nav-number">1.</span> <span class="nav-text">Console Reminder</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cache-Support"><span class="nav-number">2.</span> <span class="nav-text">Cache Support</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Minify-Support"><span class="nav-number">3.</span> <span class="nav-text">Minify Support</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Custom-Style-Support"><span class="nav-number">4.</span> <span class="nav-text">Custom Style Support</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RSS-Support"><span class="nav-number">5.</span> <span class="nav-text">RSS Support</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Creative-Commons"><span class="nav-number">6.</span> <span class="nav-text">Creative Commons</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Text-Align"><span class="nav-number">7.</span> <span class="nav-text">Text Align</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mobile-Devices-Adaptation"><span class="nav-number">8.</span> <span class="nav-text">Mobile Devices Adaptation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Rainbow-Safari"><span class="nav-number">9.</span> <span class="nav-text">Rainbow Safari</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Custom-Scrollbar-Support"><span class="nav-number">10.</span> <span class="nav-text">Custom Scrollbar Support</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Custom-Logo-Support"><span class="nav-number">11.</span> <span class="nav-text">Custom Logo Support</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Codeblock-Style"><span class="nav-number">12.</span> <span class="nav-text">Codeblock Style</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reading-Progress"><span class="nav-number">13.</span> <span class="nav-text">Reading Progress</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bookmark"><span class="nav-number">14.</span> <span class="nav-text">Bookmark</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub-Banner"><span class="nav-number">15.</span> <span class="nav-text">GitHub Banner</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Fonts-Customization"><span class="nav-number">16.</span> <span class="nav-text">Fonts Customization</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="Theme NexT"
+    src="/images/apple-touch-icon-next.png">
+  <p class="site-author-name" itemprop="name">Theme NexT</p>
+  <div class="site-description" itemprop="description">Stay Simple. Stay NexT.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQ=" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;theme-next"><i class="fa fa-fw fa-github"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:support@theme-next.org" title="E-Mail &amp;rarr; mailto:support@theme-next.org"><i class="fa fa-fw fa-envelope"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXR0ZXIuaW0vdGhlbWUtbmV4dA==" title="Gitter &amp;rarr; https:&#x2F;&#x2F;gitter.im&#x2F;theme-next"><i class="fa fa-fw fa-github-alt"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9yaW90LmltL2FwcC8jL3Jvb20vI05leFQ6bWF0cml4Lm9yZw==" title="Riot &amp;rarr; https:&#x2F;&#x2F;riot.im&#x2F;app&#x2F;#&#x2F;room&#x2F;#NexT:matrix.org"><i class="fa fa-fw fa-bullhorn"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90Lm1lL2pvaW5jaGF0L0dVTkhYQS12WmtnU011aW1MMVZtTXc=" title="Telegram [Chat] &amp;rarr; https:&#x2F;&#x2F;t.me&#x2F;joinchat&#x2F;GUNHXA-vZkgSMuimL1VmMw"><i class="fa fa-fw fa-telegram"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90Lm1lL3RoZW1lX25leHQ=" title="Telegram [News] &amp;rarr; https:&#x2F;&#x2F;t.me&#x2F;theme_next"><i class="fa fa-fw fa-paper-plane"></i></span>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC91bmRlZmluZWQ="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+  </div>
+
+
+<div class="cc-license motion-element" itemprop="sponsor">
+  <span class="exturl cc-opacity" title="Deploy with Netlify → https://www.netlify.com" data-url="aHR0cHM6Ly93d3cubmV0bGlmeS5jb20="><img width="80" src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Netlify"></span>
+</div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2014 – 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">NexT</span>
+</div>
+  <div class="powered-by">Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://theme-next.org/" class="theme-link">NexT.Gemini</a> v7.4.2
+  </div><div class="footer-custom">
+Theme source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0">here</span><br>
+Website source code <span class="exturl theme-link" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvdGhlbWUtbmV4dC5vcmc=">here</span>
+</div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+<script src="/js/utils.js?v=7.4.2"></script>
+<script src="/js/schemes/pisces.js?v=7.4.2"></script>
+<script src="/js/next-boot.js?v=7.4.2"></script>
+
+
+
+  
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.4.2"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://theme-next.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  function loadComments() {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: {language: 'en',
+          page: {
+            url: "https://theme-next.org/docs/theme-settings/index.html",
+            identifier: "docs/theme-settings/index.html",
+            title: "Theme Settings"
+          }
+        }
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://theme-next.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  }
+    (function() {
+      var offsetTop = document.getElementById('comments').offsetTop - window.innerHeight;
+      if (offsetTop <= 0) {
+        // load directly when there's no a scrollbar
+        window.addEventListener('load', loadComments, false);
+      } else {
+        var disqus_scroll = () => {
+          // offsetTop may changes because of manually resizing browser window or lazy loading images.
+          var offsetTop = document.getElementById('comments').offsetTop - window.innerHeight;
+          var scrollTop = window.scrollY;
+
+          // pre-load comments a bit? (margin or anything else)
+          if (offsetTop - scrollTop < 60) {
+            window.removeEventListener('scroll', disqus_scroll);
+            loadComments();
+          }
+        };
+        window.addEventListener('scroll', disqus_scroll);
+      }
+    })();
+  
+</script>
+
+</body>
+</html>
